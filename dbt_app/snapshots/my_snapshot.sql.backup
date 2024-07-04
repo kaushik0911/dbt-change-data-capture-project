@@ -1,0 +1,14 @@
+-- {% snapshot worldcheck_deltalake %}
+
+-- {{
+--     config(
+--         target_schema='',
+--         unique_key='uid',
+--         strategy='check',
+--         check_cols=['last_name', 'first_name']
+--     )
+-- }}
+
+-- select * from {{ ref('bronze_premium_world_check_full_synthetic') }}
+
+-- {% endsnapshot %}

@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+.vscode/
+target/
+dbt_packages/
+logs/
+.gitkeep
+.DS_store
+.user.yml
+database/parking_violations_database.duckdb

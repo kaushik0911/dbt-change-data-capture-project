@@ -1,0 +1,46 @@
+CREATE TABLE IF NOT EXISTS parking_violations_raw
+    (
+        summons_number BIGINT
+        plate_id VARCHAR
+        registration_state VARCHAR
+        plate_type VARCHAR
+        issue_date VARCHAR
+        violation_code BIGINT
+        vehicle_body_type VARCHAR
+        vehicle_make VARCHAR
+        issuing_agency VARCHAR
+        street_code1 BIGINT
+        street_code2 BIGINT
+        street_code3 BIGINT
+        vehicle_expiration_date BIGINT
+        violation_location DOUBLE
+        violation_precinct BIGINT
+        issuer_precinct BIGINT
+        issuer_code BIGINT
+        issuer_command VARCHAR
+        issuer_squad DOUBLE
+        violation_time VARCHAR
+        time_first_observed VARCHAR
+        violation_county VARCHAR
+        violation_in_front_of_or_opposite VARCHAR
+        house_number VARCHAR
+        street_name VARCHAR
+        intersecting_street VARCHAR
+        date_first_observed BIGINT
+        law_section BIGINT
+        sub_division VARCHAR
+        violation_legal_code VARCHAR
+        days_parking_in_effect VARCHAR
+        from_hours_in_effect VARCHAR
+        to_hours_in_effect VARCHAR
+        vehicle_color VARCHAR
+        unregistered_vehicle DOUBLE
+        vehicle_year BIGINT
+        meter_number VARCHAR
+        feet_from_curb BIGINT
+        violation_post_code DOUBLE
+        violation_description VARCHAR
+        no_standing_or_stopping_violation DOUBLE
+        hydrant_violation DOUBLE
+        double_parking_violation DOUBLE
+    )
