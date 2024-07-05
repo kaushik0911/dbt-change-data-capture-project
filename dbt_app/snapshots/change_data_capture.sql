@@ -1,11 +1,11 @@
-{% snapshot worldcheck_deltalake %}
+{% snapshot parking_violation_cdc %}
 
 {{
     config(
-        target_schema='',
+        target_schema='main',
         unique_key='summons_number',
         strategy='check',
-        check_cols=['summons_number']
+        check_cols='all'
     )
 }}
 
