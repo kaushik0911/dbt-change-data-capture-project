@@ -1,0 +1,6 @@
+dbt_app:
+  outputs:
+    dev:
+      type: duckdb
+      path: '/usr/local/airflow/database/parking_violations_database.duckdb' 
+  target: dev

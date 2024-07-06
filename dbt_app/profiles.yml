@@ -1,6 +1,0 @@
-dbt_app:
-  outputs:
-    dev:
-      type: duckdb
-      path: '../database/parking_violations_database.duckdb' 
-  target: dev
