@@ -1,11 +1,11 @@
-{% macro to_utc_date_if_not_null(date_column) %}
+{% macro to_utc_date_if_not_null(column_name) %}
 
     CASE
-    WHEN {{date_column}} IS NOT NULL
-        AND {{date_column}} <> ''
-        AND LENGTH({{date_column}}) = 10
+    WHEN {{column_name}} IS NOT NULL
+        AND {{column_name}} <> ''
+        AND LENGTH({{column_name}}) = 10
 
-        THEN toDate({{date_column}}, 'UTC')
+        THEN toDate({{column_name}}, 'UTC')
     ELSE
         NULL
     END

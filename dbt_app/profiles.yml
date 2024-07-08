@@ -1,6 +1,11 @@
 dbt_app:
   outputs:
     dev:
-      type: duckdb
-      path: '../database/parking_violations_database.duckdb' 
+      type: clickhouse
+      schema: main
+      host: localhost
+      port: 8123
+      user: default
+      password: ''
+      secure: False 
   target: dev

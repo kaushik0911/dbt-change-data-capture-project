@@ -8,9 +8,9 @@ WITH csv_data AS (
     SELECT
         *
     FROM
-        read_csv(
-            '/Users/kaushikshamantha/Documents/datasets/dof_parking_violation_codes.csv',
-            header = true
+        file(
+            'dof_parking_violation_codes.csv',
+            CSVWithNames
         )
 )
 
