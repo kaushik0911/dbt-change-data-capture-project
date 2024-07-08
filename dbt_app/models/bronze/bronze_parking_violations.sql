@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='summons_number',
+        unique_key='summons_number'
     ) 
 }}
 

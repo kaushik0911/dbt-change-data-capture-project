@@ -1,6 +1,10 @@
 dbt_app:
   outputs:
     dev:
-      type: duckdb
-      path: '../database/parking_violations_database.duckdb' 
+      type: starrocks
+      host: localhost
+      port: 9030
+      schema: main
+      username: root
+      password: ''
   target: dev
