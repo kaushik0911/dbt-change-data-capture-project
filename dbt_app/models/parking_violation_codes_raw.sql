@@ -9,7 +9,7 @@ WITH csv_data AS (
         *
     FROM
         read_csv(
-            '../datasets/dof_parking_violation_codes.csv',
+            'datasets/dof_parking_violation_codes.csv',
             header = true
         )
 )
