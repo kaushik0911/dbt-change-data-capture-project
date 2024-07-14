@@ -9,7 +9,7 @@ WITH csv_data AS (
         *
     FROM
         read_csv(
-            '/Users/kaushikshamantha/Documents/datasets/Parking_Violations_2023_Sample_Next.csv',
+            '../datasets/Parking_Violations_2023_Sample_Next.csv',
             header = true,
             dateformat = '%m/%d/%Y',
             columns = {
